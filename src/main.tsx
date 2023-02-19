@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import FirebaseClient from "./context/FirebaseClient";
@@ -14,9 +13,7 @@ const config = {
 };
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <React.StrictMode>
-    <FirebaseClient config={config}>
-      <App />
-    </FirebaseClient>
-  </React.StrictMode>
+  <FirebaseClient config={config}>
+    <App />
+  </FirebaseClient>
 );
